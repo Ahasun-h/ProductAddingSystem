@@ -1,3 +1,55 @@
+<h2>ProductAddingSystem</h2>
+
+## About Project
+It's a simple Laravel Products adding system. Add products with some valid information as admin. then update and delete that product. But in the admin deshbord need to login with admin email and password .View the product in the product view detail page
+
+## How to use this project
+
+    * Clone the project.
+
+    * Extract the project in your directory where you want to put your project.
+
+    * Go to the project folder using cd command on your cmd or terminal.
+
+    * Set up the database: 
+            => Create a database which name is db_sellers
+            => Import the database from the project folder database/db/product_adding_system.sql (Note: After importing the database you can delete the DB folder with db_esellers.sql from the project folder.)
+    * Run composer install on your cmd or terminal
+
+    * Copy .env.example file to .env on the root folder. You can type copy .env.example .env if using command prompt Windows or cp .env.example .env if using terminal, Ubuntu Open your .env file and change the database name (DB_DATABASE=db_esellers) to whatever you have, username (DB_USERNAME) and password (DB_PASSWORD) field correspond to your configuration.
+
+    * By default, the username is root and you can leave the password field empty. (This is for Xampp)
+
+## Use the Following step to run the project 
+    => Go to the project folder using cmd or terminal then use the command
+    1. composer install / composer update![laravel-logo-svg](https://user-images.githubusercontent.com/33959275/167317496-7cb9672f-255a-4d47-bc02-f08f8060617c.jpg)
+
+    2. copy .env.example .env (from your windows cmd)
+    3. php artisan key:generate
+    4. Now configure your database username, password, host etc in your .env file
+    5. php artisan migrate
+    6. php artisan serve
+
+
+    Go to [127.0.0.1:8000](https://127.0.0.1:8000) for view all products 
+    As admin Go to [127.0.0.1:8000/login](https://127.0.0.1:8000/login) for view all products 
+    
+    Admin Login Information
+    ------------------------
+    Email : admin@admin.com
+    password : 123456
+
+    If there was occured any error then run the following command and restart your local server
+
+     1. php artisan config:clear
+     2. php artisan cache:clear
+
+
+
+
+
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
